@@ -134,6 +134,7 @@
             <section>
                 <h1>随机图片API</h1>
                 <h3>说明文档</h3>
+                <h3>现有1212张ACG图片</h3> 
             </section>
             <button id="scroll-down"></button>
         </header>
@@ -146,11 +147,7 @@
                     <a href="https://example.net/api">https://example.net/api</a>
                     ，跳转至图片地址
                 </p>
-                <p>
-                    访问
-                    <a href="https://example.net/api/?id=数字">https://example.net/api/?id=数字</a>
-                    ，跳转至指定图片
-                </p>
+               
                 <p>
                     示例
                     <a href="https://example.net/api/?type=json&id=3">https://example.net/api/?id=3</a>
@@ -178,10 +175,14 @@
                 </h2>
                 <p>输出json</p>
                 <pre>
-{"id":3,url":"https://z3.ax1x.com/2021/08/19/fqDucQ.png"}   
+                    {"id":156,"url":"https:\/\/b2-storage.miko.pw\/Storage\/uploads\/part01\/Miko_Part01_0156.webp"}
 </pre
                 >
-            </section>
+            </section>     
+            <section>
+            <p>如您需要爬取所有图片，请 <pre>curl -C --O https://b2-storage.miko.pw/Storage/uploads/part01/Miko_Part01_[0000-1212].webp</pre>
+           不要频繁请求本api </p>
+         </section>
         </main>
         <script>
             document.querySelector("main").innerHTML = document
@@ -194,6 +195,8 @@
                 });
             });
         </script>
+    
+        
         <footer>
             <p>
                 <a href="https://github.com/yieldray/Random-Picture">Source Code</a>
